@@ -17,6 +17,14 @@ return {
     },
   },
 
+  -- Eliminar trailing whitespaces
+  vim.cmd([[
+  augroup TrimWhitespace
+    autocmd!
+    autocmd BufWritePre * :%s/\s\+$//e
+  augroup END
+  ]]),
+
   -- Set colorscheme to use
   colorscheme = "astrodark",
 
