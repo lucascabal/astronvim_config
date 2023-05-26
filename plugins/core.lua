@@ -24,6 +24,11 @@ return {
   -- { "max397574/better-escape.nvim", enabled = false },
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
+  },
+
   -- {
   --   "L3MON4D3/LuaSnip",
   --   config = function(plugin, opts)
