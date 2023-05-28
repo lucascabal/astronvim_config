@@ -1,5 +1,5 @@
   	git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-	git clone https://github.com/akaLukzKbal/-astronvim_config.git ~/.config/nvim/lua/user
+	git clone https://github.com/akaLukzKbal/astronvim_config.git ~/.config/nvim/lua/user
 	nvim
 
 ### Version de neovim
