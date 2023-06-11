@@ -15,6 +15,12 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>ff"] = {
+      function()
+        require("telescope.builtin").find_files { hidden = true, no_ignore = true }
+      end,
+      desc = "Find all files",
+    },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
