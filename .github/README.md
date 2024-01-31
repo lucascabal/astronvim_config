@@ -6,6 +6,10 @@
 
 Es necesario tener una version relativamente moderna de neovim, por lo que, si no lo tienes actualizado, sigue los siguientes pasos
 
-	sudo add-apt-repository ppa:neovim-ppa/unstable
-	sudo apt-get update
-	sudo apt-get install neovim
+	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+        chmod u+x nvim.appimage       
+  ./nvim.appimage --appimage-extract
+   ./squashfs-root/AppRun --version
+  sudo mv squashfs-root /
+  sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+  sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
